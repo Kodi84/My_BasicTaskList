@@ -1,0 +1,18 @@
+#ajax_msg {
+    border-radius: 2px;
+    text-align: center;
+    z-index: 1;
+    display:none;
+}
+
+.form-container{
+    background-color: white;
+}
+
+.editable{
+    cursor:pointer;
+}
+
+.editable:hover{
+    background-color: #4caf50;
+}

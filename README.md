@@ -17,5 +17,6 @@ Independently developed application allows users to add and keep track personali
 * JavaScript
 * Php
 * PDO
+* MySQL
 * Bootstrap Material
 * GitHub

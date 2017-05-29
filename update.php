@@ -1,6 +1,6 @@
 <?php   
 //update Name 
-include_once "Database.php";
+include_once "database.php";
 if(isset($_POST['name']) && isset($_POST['id'])){
     $name = trim($_POST['name']);
     $id = $_POST['id'];

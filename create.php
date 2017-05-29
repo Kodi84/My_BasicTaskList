@@ -1,5 +1,5 @@
 <?php   
-include_once "Database.php";
+include_once "database.php";
 if(!empty($_POST['name']) && !empty($_POST['description'])){
     $name = $_POST['name'];
     $description = $_POST['description'];

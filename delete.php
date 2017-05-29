@@ -1,5 +1,5 @@
 <?php   
-include_once "Database.php";
+include_once "database.php";
 if(isset($_POST['id'])){
     $id = $_POST['id'];    
     try{

@@ -3,18 +3,14 @@ include_once "database.php";
 if(!empty($_POST['name']) && !empty($_POST['description'])){
     $name = $_POST['name'];
     $description = $_POST['description'];
-    
     try{
         //build query
         $insertQuery = "INSERT into tasks(name,description,created_at)
-                        VALUES(:name,:description,now())";
-        
+                        VALUES(:name,:description,now())";   
         //prepare query
-        $statement = $conn->prepare($insertQuery);
-        
+        $statement = $conn->prepare($insertQuery);   
         //execute the statement
-        $statement->execute(array(":name"=>$name,":description"=>$description));
-        
+        $statement->execute(array(":name"=>$name,":description"=>$description));       
         if($statement){
             echo "Record inserted";
         }
@@ -24,5 +20,4 @@ if(!empty($_POST['name']) && !empty($_POST['description'])){
 }else{
     echo "Please enter valid input";
 }
-
 ?>

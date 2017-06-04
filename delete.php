@@ -5,14 +5,11 @@ if(isset($_POST['id'])){
     try{
         //build query
         $delete = "DELETE FROM tasks 
-                        Where id = :id ";
-        
+                        Where id = :id ";       
         //prepare query
-        $statement = $conn->prepare($delete);
-        
+        $statement = $conn->prepare($delete);       
         //execute the statement
-        $statement->execute(array(":id" => $id));
-        
+        $statement->execute(array(":id" => $id));       
         if($statement){
             echo "Record have been deleted";
         }
